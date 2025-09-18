@@ -78,15 +78,6 @@
             document.head.appendChild(link);
         }
 
-        window.initializeOrRedirect = function (url) {
-            if (yt && yt.tv && yt.tv.initializer) {
-                yt.tv.initializer(url);
-            } else {
-                window.location = "https://web.archive.org/web/20160303220919/http://www.youtube.com/error?src=404";
-            }
-        };
-
-
         if (f) {
             window.environment.player_url = e || c
                 ? "/video/youtube/src/web/javascript/debug-tv-player-en_US.js"
